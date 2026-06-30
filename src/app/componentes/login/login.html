@@ -1,0 +1,45 @@
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+
+  <div class="col-md-4">
+
+    <div class="card shadow">
+
+      <div class="card-header text-center">
+        <h3>Boas Vindas!</h3>
+      </div>
+
+      <div class="card-body">
+
+        <div class="mb-3">
+          <label class="form-label">Usuário</label>
+
+          <input
+            type="text"
+            class="form-control"
+            name="usuario"
+            [(ngModel)]="usuario">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Senha</label>
+
+          <input
+            type="password"
+            class="form-control"
+            name="senha"
+            [(ngModel)]="senha">
+        </div>
+
+        <button
+          class="btn btn-primary w-100"
+          (click)="entrar()">
+          Entrar
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
